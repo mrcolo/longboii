@@ -1,8 +1,8 @@
 # README.md
 
-## GPT-7B Storywriter Text Generation
+## MPT-7B-StoryWriter Text Generation
 
-This repository contains a Python script that demonstrates how to use the GPT-7B Storywriter model for text generation. The model is based on the transformers library and is designed to generate coherent and contextually relevant text based on a given input.
+This repository contains a Python script that demonstrates how to use [MosaicML's MPT-7B-StoryWriter model](https://huggingface.co/mosaicml/mpt-7b-storywriter) for text generation. The model is based on the transformers library and is designed to generate coherent and contextually relevant text based on a given input.
 
 Tested on a 3090.
 
@@ -21,12 +21,12 @@ pip install torch transformers
 
 ### Usage
 
-The `gpt_7b_storywriter.py` script contains a function called `generate_text(input_text: str) -> str` that takes an input text string and generates relevant text based on the input.
+The `run.py` script contains a function called `generate_text(input_text: str) -> str` that takes an input text string and generates relevant text based on the input.
 
 First, import the `generate_text` function from the script:
 
 ```python
-from gpt_7b_storywriter import generate_text
+from run import generate_text
 ```
 
 Then, call the function with your desired input text:
@@ -41,7 +41,7 @@ The `generate_text` function will return a string containing the generated text 
 
 ### Customization
 
-You can customize the behavior of the text generation by modifying the configuration settings in the `gpt_7b_storywriter.py` script. For example, you can change the `max_seq_len` parameter to control the maximum length of the generated text. Please refer to the [transformers documentation](https://huggingface.co/transformers/) for more information on the available configuration settings.
+You can customize the behavior of the text generation by modifying the configuration settings in the `run.py` script. For example, you can change the `max_seq_len` parameter to control the maximum length of the generated text. Please refer to the [transformers documentation](https://huggingface.co/transformers/) for more information on the available configuration settings.
 
 ### License
 
